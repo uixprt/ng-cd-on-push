@@ -13,7 +13,8 @@
           "inlineTemplate": true,
           "inlineStyle": true,
           "style": "scss",
-          "skipTests": true
+          "skipTests": true,
+          "flat": true
         },
         "@schematics/angular:class": {
           "skipTests": true
@@ -45,6 +46,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs",
+            "baseHref": "https://uixprt.github.io/ng-cd-on-push/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
